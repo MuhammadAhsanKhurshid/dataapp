@@ -12,6 +12,11 @@ time_hist_color = st.sidebar.selectbox('Color by', ('temp_min','temp_max'))
 st.sidebar.subheader('Donut chart parameter')
 donut_theta = st.sidebar.selectbox('Select data',('q2', 'q3'))
 
+st.sidebar.subheader('Line chart parameters')
+plot_data = st.sidebar.multiselect('Select data',['Price','Quantity'],['Price','Quantity'])
+plot_height = st.sidebar.slider('Specify plot height', 200, 500, 250)
+
+
 
 st.sidebar.markdown('''
 ---
