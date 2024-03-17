@@ -1,5 +1,24 @@
 import streamlit as st
 import pandas as pd
+import plost
+
+st.set_page_config(layout ='wide', initial_sidebar_state='expanded')
+
+st.sidebar.header('Data Dashboard')
+
+st.sidebar.subheader('Heat map parameter')
+time_hist_color = st.sidebar.selectbox('Color by', ('temp_min','temp_max'))
+
+st.sidebar.subheader('Donut chart parameter')
+donut_theta = st.sidebar.selectbox('Select data',('q2', 'q3'))
+
+
+st.sidebar.markdown('''
+---
+                    Created with code by Spark ''')
+
+
+
 
 st.write("This app is purely dedicated to data analyticsss")
 st.title("Homepage")
